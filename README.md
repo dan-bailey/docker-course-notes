@@ -20,6 +20,13 @@ https://www.udemy.com/course/docker-kubernetes-the-practical-guide/
     * encapsulate an app versus a whole machine (containers vs. VMs)
 
 ## section 2: images and containers
-* core concepts are containers and images
-* using pre-built/custom images
-* creating and managing containers
+* content for this section
+    * core concepts are containers and images
+    * using pre-built/custom images
+    * creating and managing containers
+* images and containers -- what/why
+    * images are templates/blueprints for containers
+    * images contain code/tools/runtimes
+    * an image can be used to run multiple images
+    * containers are based on images
+    
