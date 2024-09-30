@@ -39,7 +39,20 @@ https://www.udemy.com/course/docker-kubernetes-the-practical-guide/
     * images contain the stuff, containers run it
 * creating a custom image
     * creating a Dockerfile (based on another image)
-    * VSCode ➡️ install Docker extension
-    
-
+    * **TODO:** VSCode ➡️ install Docker extension
+    * `FROM` lets you build atop an existing image
+    * which files?  `COPY`
+    * `COPY . . ` -- first dot = all folders and subfolders should be copies, second dot = where to store them
+        * docker container contains its own file structure
+    * `RUN` command like `npm install`, everything gets copied into rool
+    * `WORKDIR` is setting the working directory, obvs
+    * `CMD` will only execute when a container is started based on the image (for running the app)
+    * containers don't expose ports to local machine, it's isolated
+    * last inst before `CMD` should be `EXPOSE` to make it visible.  `EXPOSE 80` for example.
+* After Dockerfile is built, go to terminal
+* run `docker build .` to build a new custom image (. specifies where to find the Dockerfile), spits out an ID
+* `docker run <id>` starts that container
+* `docker stop <name>` stops that container
+* `docker run -p <local port_number>: <internal_port_number> <id>` provides a local port num that forwards to the app's port number in the container
+* _IMAGES ARE READ-ONLY_
 
