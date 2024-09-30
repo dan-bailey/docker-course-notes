@@ -29,4 +29,7 @@ https://www.udemy.com/course/docker-kubernetes-the-practical-guide/
     * images contain code/tools/runtimes
     * an image can be used to run multiple images
     * containers are based on images
-    
+* running a pre-built image
+    * use a pre-existing image (ex.: DockerHub)
+    * '''docker run node'''
+
