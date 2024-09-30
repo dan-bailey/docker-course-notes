@@ -14,9 +14,10 @@ https://www.udemy.com/course/docker-kubernetes-the-practical-guide/
 * VMs versus Containers
     * VM = like a container, but more complex (virtual OS) and more overhead
     * VM competes with the base OS for resources, poor performance
-    * 
-
-
+    * containers are code, libraries, dependencies, tools, but no OS, or anything like that
+    * containers have a config file that can be used to recreate the container
+    * a container can be converted to an image which can be run on other systems
+    * encapsulate an app versus a whole machine (containers vs. VMs)
 
 ## section 2: images and containers
 * core concepts are containers and images
