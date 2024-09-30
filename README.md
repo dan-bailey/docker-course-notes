@@ -31,5 +31,15 @@ https://www.udemy.com/course/docker-kubernetes-the-practical-guide/
     * containers are based on images
 * running a pre-built image
     * use a pre-existing image (ex.: DockerHub)
-    * '''docker run node'''
+    * `docker run node` creates a node container from the image
+    * tries to find local first, then pulls from Dockerhub
+    * `docker ps -a` to see 
+    * (at the end of this section is a cheatsheet of docker commands)
+    * `docker run -it node` puts you into an interactive mode to work with container
+    * images contain the stuff, containers run it
+* creating a custom image
+    * creating a Dockerfile (based on another image)
+    * VSCode ➡️ install Docker extension
+    
+
 
