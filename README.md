@@ -54,5 +54,25 @@ https://www.udemy.com/course/docker-kubernetes-the-practical-guide/
 * `docker run <id>` starts that container
 * `docker stop <name>` stops that container
 * `docker run -p <local port_number>: <internal_port_number> <id>` provides a local port num that forwards to the app's port number in the container
-* _IMAGES ARE READ-ONLY_
-
+* _IMAGES ARE READ-ONLY_  (LOCKED AND FINISHED ONCE BUILD IS COMPLETE)
+* need to rebuild to pick up external change (`docker build .`)
+    * gets a new image name, has different code
+    * run like you do normally to see changes
+* an image is a closed template
+* changes require a rebuild
+* images are layer-based architecture
+    * when you build or rebuild, instructions are re-evaluated, but previous results are cached so it speeds up time on re-running
+    * docker caches every instruction result
+    * every instruction is a layer
+* **First Summary:**
+    * an image contains
+        * our code
+        * tools (via Dockerfile)
+        * setup steps
+        * port control
+        * execution command
+    * an image is a blueprint for a container
+    * you can run multiple containers off a single image
+    * containers are isolated from one another
+* **Managing and Building Containers**
+    * add `--help` to any command for assistance
